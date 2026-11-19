@@ -1,0 +1,48 @@
+{
+  "name": "Prueba simple de n8n",
+  "nodes": [
+    {
+      "id": "0e7ddc60-39db-4a3a-b336-a720cfe04ac1",
+      "name": "Disparador manual",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "f0261214-245c-4ff7-bf86-f1e780ebb649",
+      "name": "Mensaje de prueba",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        250,
+        0
+      ],
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\"mensaje\":\"Hola desde n8n\",\"ok\":true}",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Disparador manual": {
+      "main": [
+        [
+          {
+            "node": "Mensaje de prueba",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

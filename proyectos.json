@@ -1,0 +1,29 @@
+[
+  {
+    "autor": "Proyecto propio",
+    "descripcion": "Mi primera práctica con n8n. El flujo parte de un disparador manual y usa Edit Fields para crear un campo de texto.",
+    "salida": {
+      "Mi primer nodo de n8n funcionando": ""
+    },
+    "nombre": "Day one",
+    "nodos": [
+      "When clicking ‘Execute workflow’",
+      "Edit Fields"
+    ],
+    "archivo": "flujos/day-one.json"
+  },
+  {
+    "autor": "Creado con Codex",
+    "descripcion": "Una prueba de inicio a fin. Al ejecutarlo manualmente, el flujo genera un mensaje y un indicador de éxito.",
+    "salida": {
+      "mensaje": "Hola desde n8n",
+      "ok": true
+    },
+    "nombre": "Prueba simple de n8n",
+    "nodos": [
+      "Disparador manual",
+      "Mensaje de prueba"
+    ],
+    "archivo": "flujos/prueba-simple.json"
+  }
+]

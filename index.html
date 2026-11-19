@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mis primeros proyectos y prácticas de automatización con n8n.">
+  <title>Cuaderno de automatizaciones</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="proyectos.js" defer></script>
+</head>
+<body>
+  <header class="shell top">
+    <a class="brand" href="#"><span aria-hidden="true">✳</span> Cuaderno de automatizaciones</a>
+    <nav aria-label="Navegación principal"><a href="#proyectos">Proyectos</a><a href="#sobre-mi">Sobre mí</a></nav>
+  </header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="titulo">
+      <div class="intro">
+        <p class="eyebrow">Portafolio personal · n8n</p>
+        <h1 id="titulo">Aprender<br>a <em>automatizar.</em></h1>
+        <p>Un cuaderno de prácticas y proyectos donde documento lo que construyo con n8n, desde mi primer nodo hasta flujos completos.</p>
+        <a class="button primary" href="#proyectos">Explorar proyectos</a>
+      </div>
+      <div class="board" aria-hidden="true">
+        <div class="board-track"><span class="chip">▶</span><span class="line"></span><span class="chip coral">≡</span><span class="line"></span><span class="chip lilac">{ }</span></div>
+        <div class="board-labels"><span>Disparador</span><span>Edición</span><span>Salida</span></div>
+      </div>
+    </section>
+    <section id="proyectos" class="projects" aria-labelledby="proyectos-titulo">
+      <div class="section-head"><h2 id="proyectos-titulo">Proyectos</h2><p>Diagramas y archivos para importar en n8n.</p></div>
+      <div class="grid" id="catalogo" aria-live="polite"><p>Cargando proyectos…</p></div>
+      <noscript>Activa JavaScript para ver el catálogo.</noscript>
+    </section>
+    <section id="sobre-mi" class="about">
+      <h2>Sobre mí</h2>
+      <p>Estoy aprendiendo automatización con n8n. Aquí registro cómo conecto los nodos, qué datos produce cada flujo y lo que voy construyendo en el camino.</p>
+    </section>
+  </main>
+  <footer class="shell footer">Cuaderno de automatizaciones</footer>
+</body>
+</html>
